@@ -12,7 +12,7 @@ const createErrorHandler = defaultValue => res => {
 
 export const getPredictions = (locationId) => {
   console.log(locationId)
-  return fetch('https://api.cittamobi.com.br/m3p/js/prediction/stop/1000002049', {
+  return fetch(`https://api.cittamobi.com.br/m3p/js/prediction/stop/${locationId}`, {
     // credentials: 'same-origin',
     method: 'get',
     headers: {
